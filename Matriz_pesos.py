@@ -7,3 +7,9 @@ class Grafo:
     def adiciona_aresta(self,u,v,peso ):
         self.grafo[u-1][v-1] = peso 
         self.grafo[v-1][u-1] = peso 
+
+    def mostra_matriz(self):
+        print("A matriz de Distâncias é")
+        for i in range(self.vertices):
+            print(self.grafo[i])
+            
